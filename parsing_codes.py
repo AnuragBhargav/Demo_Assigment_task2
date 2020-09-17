@@ -3,12 +3,12 @@ import requests
 
 r = requests.get('https://raw.githubusercontent.com/elastic/examples/master/Common%20Data%20Formats/nginx_logs/nginx_logs')
 
-with open('jsr.log','w') as ru:
+with open('nginx.log','w') as ru:
     ru.write(r.text)
 
 dictionary = {}
 
-with open("jsr.log", "r") as logFile:
+with open("nginx.log", "r") as logFile:
 
     for line in logFile:
 
